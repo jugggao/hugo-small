@@ -1,8 +1,13 @@
 <article>
 	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-	<b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time></b>
+	<b>时间：</b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time> |
+	<b>分类：</b>
+	{{ range .Params.categories }}
+	<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}.</a>
+	{{ end }} |
+	<b>标签：</b>
 	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+		<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}.</a>
 	{{ end }}
 	<div>
 		{{ .Summary }}
