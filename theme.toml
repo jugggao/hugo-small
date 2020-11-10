@@ -1,6 +1,6 @@
 name = "剑十三"
 license = "MIT"
-licenselink = "https://github.com/colorchestra/smol/blob/master/LICENSE.md"
+licenselink = "https://github.com/jugggao/hugo-small/blob/master/LICENSE.md"
 description = "与其感慨路难行，不如马上出发"
 homepage = "https://github.com/jugggao"
 tags = ["blog", "minimal", "monospace", "dark mode", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
@@ -15,23 +15,3 @@ min_version = "0.20"
   author = "JuggGao"
   homepage = "https://github.com/jugggao"
   repo = "https://github.com/jugggao/blog"
-
-# Header
-[menu]
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 1
-
-[[menu.main]]
-identifier = "categories"
-name = "Categories"
-url = "/categories/"
-weight = 2
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 3
