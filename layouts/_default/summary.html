@@ -1,4 +1,4 @@
-<article>
+<article class="border">
 	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	<b>时间：</b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time> |
 	<b>分类：</b>
@@ -16,3 +16,4 @@
 		{{ end }}
 	</div>
 </article>
+<br><br/>

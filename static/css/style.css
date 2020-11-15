@@ -1,7 +1,89 @@
-html {overflow-y: scroll}
-code {font-family: Consolas}
-body{max-width:1200px;margin:40px auto;padding:0 10px;font:14px/1.5 Consolas;color:#444}h1,h2,h3{line-height:1.2}@media (prefers-color-scheme: dark){body{color:white;background:#444}a:link{color:#5bf}a:visited{color:#ccf}}
-p > code{color: #FFFFFF; background:#272822; padding:2px; font-family: Consolas}
-pre{color: #FFFFFF; background:#272822; padding:24px; white-space: pre-wrap; word-wrap: break-word}
-article{padding:24px 0}
-.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+html {
+    overflow-y: scroll
+}
+
+body {
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 10px;
+    font:14px/1.5 Consolas;
+    color:#000000
+}
+h1,h2,h3 {
+    line-height:1.2
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color:white;
+        background:#000000
+    }
+    a:link {
+        color:#5bf
+    }
+    a:visited{
+        color:#ccf
+    }
+}
+
+code {
+    font-family: Consolas;
+
+}
+
+p > code {
+    color: #000000;
+    background:#F0F3F3;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 2px;
+    font-family: Consolas;
+}
+pre {
+    color: #FFFFFF;
+    background: #282A36;
+    border-radius: 2px;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+article {
+    padding:24px 0
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.border {
+    border-style: solid;
+    padding: 32px;
+    border-width:1px;
+    border-color: #131313;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 13px #131313;
+}
+
+.header-title {
+    border-style: solid;
+    padding: 13px;
+    border-width:1px;
+    border-color: #131313;
+    background: #FEFEFE;
+    box-shadow: 3px 3px 1px #131313;
+}
+
+.nav {
+    font-size: 15px;
+    font-weight: bold;
+    /*border-style: solid;*/
+    /*padding: 5px;*/
+    /*border-width:1px;*/
+    /*border-color: #131313;*/
+    /*background: #FEFEFE;*/
+    /*box-shadow: 1px 1px 1px #131313;*/
+    padding: 10px;
+}

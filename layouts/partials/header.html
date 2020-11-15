@@ -1,14 +1,12 @@
 <header>
-	{{ strings.Repeat ( .Site.Title | len | add 3 ) "-" }}<br>
-	-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> --<br>
-	{{ strings.Repeat ( .Site.Title | len | add 3 ) "-" }}
-	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
-	<p>
-	<nav>
-			| <a href="/"><b>主页</b></a> |
+{{/*	{{ strings.Repeat ( .Site.Title | len | add 3 ) "-" }}<br>*/}}
+	<a style="font-size: 24px; font-family: 宋体; float: contour; font-weight: bold;" class="header-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a><br>
+{{/*	{{ strings.Repeat ( .Site.Title | len | add 3 ) "-" }}*/}}
+	<div style="float: right; font-size: 15px; font-weight: bold;">{{ .Site.Params.subtitle }}</div><br>
+			<a class="nav"  href="/">主页.</a>
 			{{ with .Site.Menus.main }}
 			{{ range . }}
-			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a> |
+			<a class="nav" href="{{ .URL | relURL }}">{{ .Name }}.</a>
 			{{ end }}
 	</nav>
 	</p>
